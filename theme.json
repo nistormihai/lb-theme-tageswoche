@@ -1,11 +1,11 @@
 {
-    "label": "Demo Theme",
-    "name": "demo",
+    "label": "Tageswoche Theme",
+    "name": "Tageswoche",
     "version": "1.0.0",
-    "author": "Nistor Mihai <mihai.nistor@sourcefabric.org>",
+    "author": "Stefan Kempf <stefan.kempf@tageswoche.ch>",
     "repository": {
         "type": "git",
-        "url": "git@github.com:liveblog/lb-theme-demo.git"
+        "url": "git@github.com:tageswoche/lb-theme-tageswoche.git"
     },
     "license": "AGPL-3.0",
     "extends": "classic",
