@@ -1,7 +1,7 @@
 <div class="lb-timeline {{timeline.settings.language}}" ng-app="theme" ng-controller="TimelineCtrl as timeline">
     <div class="alert" ng-hide="alerthide">
         <button class="alert-close" ng-click="alerthide=true"><span>&times;</span></button>
-        <strong>Live Blog demo!</strong> This blog has been created for testing purposes. For more information, please <a href="https://www.sourcefabric.org/en/liveblog/help/" target="_blank">contact us</a>.
+        <strong>Live Blog Tageswoche!</strong> This blog has been created for testing purposes. For more information, please <a href="https://www.sourcefabric.org/en/liveblog/help/" target="_blank">contact us</a>.
     </div>
     <div class="lb-timeline__header">
         <h1 ng-if="timeline.settings.showTitle" ng-bind="timeline.blog.title"></h1>
@@ -49,11 +49,7 @@
                 ng-class="{'active': timeline.comment}"
                 ng-click="timeline.comment = !timeline.comment" translate>Comment</button>
         </div>
-        <div class="header-bar__logo">
-            <a href="https://www.sourcefabric.org/liveblog/" target="_blank">
-                <img ng-src="{{ timeline.templateDir}}images/lb-logo.png"/>
-            </a>
-        </div>
+        
     </div>
     <div class="timeline-body">
         <div lb-comments data-comment="timeline.comment"></div>
