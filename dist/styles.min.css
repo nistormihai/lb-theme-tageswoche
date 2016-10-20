@@ -2,7 +2,7 @@ body{font-family:'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, ser
 
 
 .alert, .lb-timeline__header {display:none;}
-.header-bar {padding-top:5px;}
+.header-bar {padding-top:5px !important;}
 .ng-scope, .ng-binding {font-size: 16px; line-height: 24px; font-family:'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;}
 body .sorting-bar__order {height:22px;}
 body .sorting-bar__order--active {color: #008148; border-bottom: 1px solid #008148; padding-bottom:0;}

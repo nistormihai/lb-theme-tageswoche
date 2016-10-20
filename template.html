@@ -12,20 +12,20 @@
     </div>
     <div class="header-bar">
         <div class="sorting-bar">
-            <div class="sorting-bar__title" translate>Sort by:</div>
+            <div class="sorting-bar__title" translate>Sortieren:</div>
             <div class="sorting-bar__orders">
                 <div
                     class="sorting-bar__order"
                     ng-class="{'sorting-bar__order--active': timeline.pagesManager.order()=='editorial'}"
-                    ng-click="timeline.orderBy('editorial')" translate>Editorial</div>
+                    ng-click="timeline.orderBy('editorial')" translate>Ausgesucht</div>
                 <div
                     class="sorting-bar__order"
                     ng-class="{'sorting-bar__order--active': timeline.pagesManager.order()=='newest_first'}"
-                    ng-click="timeline.orderBy('newest_first')" translate>Newest first</div>
+                    ng-click="timeline.orderBy('newest_first')" translate>Neueste</div>
                 <div
                     class="sorting-bar__order"
                     ng-class="{'sorting-bar__order--active': timeline.pagesManager.order()=='oldest_first'}"
-                    ng-click="timeline.orderBy('oldest_first')" translate>Oldest first</div>
+                    ng-click="timeline.orderBy('oldest_first')" translate>&Auml;lteste</div>
             </div>
             <div class="sorting-bar__orders-mobile">
                 <lb-dropdown placeholder="{{ 'Sort by:' | translate }}" list="timeline.sortOptions"
@@ -47,7 +47,7 @@
                 ng-if="timeline.settings.canComment"
                 class="btn ng-cloak"
                 ng-class="{'active': timeline.comment}"
-                ng-click="timeline.comment = !timeline.comment" translate>Comment</button>
+                ng-click="timeline.comment = !timeline.comment" translate>Kommentieren</button>
         </div>
         
     </div>
@@ -56,7 +56,7 @@
         <div
             class="lb-post emtpy-message" ng-cloak
             ng-show="timeline.pagesManager.allPosts().length + timeline.stickyPagesManager.allPosts().length< 1 && !timeline.loading">
-            <div translate>No posts for now.</div>
+            <div translate>Keine Beiträge bisher.</div>
         </div>
         <section
             ng-class="{'comment-active': timeline.comment}"
@@ -69,7 +69,7 @@
                  ng-show="timeline.settings.loadNewPostsManually && timeline.newPosts.length > 0"
                  translate translate-n="timeline.newPosts.length"
                  translate-plural="See {{$count}} new updates" ng-cloak>
-                See one new update
+                Ein neues Update
             </div>
             <lb-posts
                 ng-if='!timeline.stickyPagesManager.hideSticky'
@@ -84,7 +84,7 @@
                      ng-if="timeline.stickyPagesManager.hideSticky"
                      translate translate-n="timeline.stickyPagesManager.allPosts().length"
                      translate-plural="{{$count}} pined posts">
-                    One pinned post
+                    Ein gepinnter Beitrag
                 </div>
                 <button class="pin-drawer-button" ng-class="{'chevron-active': timeline.stickyPagesManager.hideSticky}"
                 ng-click="timeline.stickyPagesManager.hideSticky = !timeline.stickyPagesManager.hideSticky">
@@ -95,7 +95,7 @@
         </section>
         <button ng-click="timeline.fetchNewPage()"
                 class="ng-cloak"
-                ng-if="!timeline.settings.infinitScroll && timeline.isAllowedToLoadMore()" translate>Load more posts</button>
-        <div class="loading" ng-show="timeline.loading" translate>Loading</div>
+                ng-if="!timeline.settings.infinitScroll && timeline.isAllowedToLoadMore()" translate>Weitere Einträge laden</button>
+        <div class="loading" ng-show="timeline.loading" translate>Laden</div>
     </div>
 </div>
