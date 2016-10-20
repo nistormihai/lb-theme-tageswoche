@@ -9,8 +9,9 @@ body .sorting-bar__order--active {color: #008148; border-bottom: 1px solid #0081
 body .sorting-bar__order:hover {color: #008148 !important;}
 body a {color: #008148 !important;}
 body a:hover {text-decoration:underline; color: #008148 !important; cursor: pointer !important;}
-article blockquote {padding: 0 8%;}
-article blockquote p:before, article blockquote p:after {color: #008148 !important;}
+article blockquote {margin: 0 8%; border-left: 2px solid black; border-right: 2px solid black; }
+article blockquote p {font-weight:bold;}
+article blockquote p:before, article blockquote p:after {content:none;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > article > blockquote > p {color:black;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > div > figure > figcaption {display:none;}
 .lb-post-permalink, .item--embed__credit {display:none;}
@@ -21,3 +22,4 @@ body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > d
 body .sorting-bar__order:hover {border-bottom:0px solid transparent;}
 article > blockquote > h4 {margin-left:30px;}
 .pin-posts .lb-post {background-color:#F4F4F4;}
+.lb-updated-date {text-transform: none;}
