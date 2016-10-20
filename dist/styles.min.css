@@ -20,3 +20,4 @@ body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > d
 .sorting-bar__title {text-transform: none;}
 body .sorting-bar__order:hover {border-bottom:0px solid transparent;}
 article > blockquote > h4 {margin-left:30px;}
+.pin-posts .lb-post {background-color:#F4F4F4;}
