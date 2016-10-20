@@ -6,7 +6,9 @@ body{font-family:'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, ser
 .ng-scope, .ng-binding {font-size: 16px; line-height: 24px; font-family:'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;}
 body .sorting-bar__order {height:22px;}
 body .sorting-bar__order--active {color: #008148; border-bottom: 1px solid #008148; padding-bottom:0;}
-body .sorting-bar__order:hover, body a:hover {color: #008148 !important;}
+body .sorting-bar__order:hover {color: #008148 !important;}
+body a {color: #008148 !important;}
+body a:hover {text-decoration:underline;}
 article blockquote {padding: 0 8%;}
 article blockquote p:before, article blockquote p:after {color: #008148 !important;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > article > blockquote > p {color:black;}
@@ -14,6 +16,7 @@ body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > d
 .lb-post-permalink, .item--embed__credit {display:none;}
 .load-new-posts span {color: #008148;}
 .load-new-posts:hover {background-color: #F4F4F4;}
-.lb-author__date, .lb-author__name {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #999;}
+.lb-author__date, .lb-author__name {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #999 !important;}
 .sorting-bar__title {text-transform: none;}
-body .sorting-bar__order:hover {border-bottom:1px solid transparent;}
+body .sorting-bar__order:hover {border-bottom:0px solid transparent;}
+article > blockquote > h4 {margin-left:30px;}
