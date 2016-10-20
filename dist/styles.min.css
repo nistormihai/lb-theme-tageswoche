@@ -11,7 +11,7 @@ body a {color: #008148 !important;}
 body a:hover {text-decoration:underline; color: #008148 !important; cursor: pointer !important;}
 article blockquote {margin: 0 8%; border-left: 2px solid black; border-right: 2px solid black; }
 article blockquote p {font-weight:bold;}
-article blockquote p:before, article blockquote p:after {content:none;}
+body article blockquote p:before, body article blockquote p:after {content:none !important;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > article > blockquote > p {color:black;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > div > figure > figcaption {display:none;}
 .lb-post-permalink, .item--embed__credit {display:none;}
