@@ -140,5 +140,6 @@ body .alert-close:hover {
 }
 
 .ng-scope {
-    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif !important;
+    background: red !important;
 }
