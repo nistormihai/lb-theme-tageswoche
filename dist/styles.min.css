@@ -14,4 +14,6 @@ body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > d
 .lb-post-permalink, .item--embed__credit {display:none;}
 .load-new-posts span {color: #008148;}
 .load-new-posts:hover {background-color: #F4F4F4;}
-.lb-author {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #999;}
+.lb-author__date, .lb-author__name {font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #999;}
+.sorting-bar__title {text-transform: none;}
+body .sorting-bar__order:hover {border-bottom:1px solid transparent;}
