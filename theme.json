@@ -1,7 +1,7 @@
 {
     "label": "Tageswoche Theme",
     "name": "Tageswoche",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Stefan Kempf <stefan.kempf@tageswoche.ch>",
     "repository": {
         "type": "git",

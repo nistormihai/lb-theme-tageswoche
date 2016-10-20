@@ -138,3 +138,7 @@ body .alert-close:hover {
     cursor: pointer;
     opacity: 0.9;
 }
+
+.ng-scope {
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
+}
