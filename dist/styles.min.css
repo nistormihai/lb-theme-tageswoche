@@ -8,7 +8,7 @@ body .sorting-bar__order {height:22px;}
 body .sorting-bar__order--active {color: #008148; border-bottom: 1px solid #008148; padding-bottom:0;}
 body .sorting-bar__order:hover {color: #008148 !important;}
 body a {color: #008148 !important;}
-body a:hover {text-decoration:underline; color: #008148; cursor: pointer;}
+body a:hover {text-decoration:underline; color: #008148 !important; cursor: pointer !important;}
 article blockquote {padding: 0 8%;}
 article blockquote p:before, article blockquote p:after {color: #008148 !important;}
 body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > article > blockquote > p {color:black;}
