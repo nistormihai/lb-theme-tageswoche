@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
     color: #777;
 }
 
@@ -98,7 +98,7 @@ body .item--embed {
 }
 
 body .item--embed__title, body .item--embed__title a {
-    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
     color: #454545;
     margin-bottom: 0px;
 }
