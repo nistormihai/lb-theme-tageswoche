@@ -1,7 +1,7 @@
 {
     "label": "Tageswoche Theme",
     "name": "Tageswoche",
-    "version": "1.1.7",
+    "version": "1.1.11",
     "author": "Stefan Kempf <stefan.kempf@tageswoche.ch>",
     "repository": {
         "type": "git",
@@ -10,14 +10,12 @@
     "license": "AGPL-3.0",
     "extends": "classic",
     "devStyles": [
-        "styles/embed.css"
+        "styles/tageswoche.css"
     ],
     "styles": [
         "dist/styles.min.css"
     ],
-    "devScripts": [
-        "main.js"
-    ],
+    "devScripts": [],
     "scripts": [
         "dist/scripts.min.js"
     ],

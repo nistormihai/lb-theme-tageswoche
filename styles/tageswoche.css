@@ -1,0 +1,167 @@
+body {
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
+    color: #000
+}
+body a {
+    color: #454545!important;
+    text-decoration: none
+}
+body a:hover {
+    color: #b40031!important
+}
+body h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    color: #454545
+}
+body .header-bar {
+    padding: 11px 0 0 11px
+}
+body .header-bar__logo {
+    display: none
+}
+body .sorting-bar__order--active {
+    border-bottom: 2px solid #b40031;
+    color: #b40031
+}
+body .sorting-bar__order:hover {
+    color: #b40031;
+    border-bottom: 2px solid transparent
+}
+body .lb-timeline {
+    margin-top: 0;
+    border: none
+}
+body article {
+    font-size: 15px;
+    line-height: 1.42857143
+}
+body article blockquote p:after,
+body article blockquote p:before {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: -4px
+}
+body article blockquote {
+    margin: 30px 0 0
+}
+body article blockquote ul {
+    list-style: none
+}
+body article blockquote p {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px
+}
+body article blockquote p:before {
+    left: 0;
+    content: "«"
+}
+body article blockquote p:after {
+    right: 0;
+    content: "»"
+}
+body .lb-post {
+    padding: 20px 10px;
+    border-bottom: 1px solid #ececec
+}
+body .lb-author {
+    margin-bottom: 15px
+}
+body .lb-author__date,
+body .lb-author__name {
+    color: #454545;
+    font-weight: 500
+}
+body .item--embed {
+    margin: 15px 0
+}
+body .item--embed__title,
+body .item--embed__title a {
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
+    color: #454545;
+    margin-bottom: 0
+}
+alert,
+.lb-timeline__header {
+    display: none;
+}
+.header-bar {
+    padding-top: 5px !important;
+}
+.ng-scope,
+.ng-binding {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'GeorgiaProW01-Regular', Georgia, 'Times New Roman', Times, serif;
+}
+body .sorting-bar__order {
+    height: 22px;
+}
+body .sorting-bar__order--active {
+    color: #008148;
+    border-bottom: 1px solid #008148;
+    padding-bottom: 0;
+}
+body .sorting-bar__order:hover {
+    color: #008148 !important;
+}
+body a {
+    color: #008148 !important;
+}
+body a:hover {
+    text-decoration: underline;
+    color: #008148 !important;
+    cursor: pointer !important;
+}
+article blockquote {
+    margin: 0 8%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+article blockquote p {
+    font-weight: bold;
+}
+body article blockquote p:before,
+body article blockquote p:after {
+    content: none !important;
+}
+body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > article > blockquote > p {
+    color: black;
+}
+body > div.lb-timeline.en > div.timeline-body > section > lb-posts > article > div.lb-item.ng-scope > div > lb-item > div > div > figure > figcaption {
+    display: none;
+}
+.lb-post-permalink,
+.item--embed__credit {
+    display: none;
+}
+.load-new-posts span {
+    color: #008148;
+}
+.load-new-posts:hover {
+    background-color: #F4F4F4;
+}
+.lb-author__date,
+.lb-author__name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #999 !important;
+}
+.sorting-bar__title {
+    text-transform: none;
+}
+body .sorting-bar__order:hover {
+    border-bottom: 0px solid transparent;
+}
+article > blockquote > h4 {
+    margin-left: 30px;
+}
+.pin-posts .lb-post {
+    background-color: #F4F4F4;
+}
+.lb-updated-date {
+    text-transform: none;
+}
