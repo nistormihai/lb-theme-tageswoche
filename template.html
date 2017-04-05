@@ -6,9 +6,9 @@
     <div class="lb-timeline__header">
         <h1 ng-if="timeline.settings.showTitle" ng-bind="timeline.blog.title"></h1>
         <div class="illustration" ng-if="timeline.blog.picture_url && timeline.settings.showImage" ng-cloak>
-            <img ng-src="{{ timeline.blog.picture_url }}" srcset="{{ timeline.blog.picture_srcset }}" sizes="100vw"/>
+            <img ng-src="{{ timeline.blog.picture_url }}" ng-srcset="{{ timeline.blog.picture_srcset }}" sizes="100vw"/>
         </div>
-        <p class="description" ng-if="timeline.settings.showDescription" ng-bind="timeline.blog.description"></p>
+        <p class="description" ng-if="timeline.settings.showDescription" ng-bind-html="timeline.blog.descriptionHtml"></p>
     </div>
     <div class="header-bar">
         <div class="sorting-bar">
@@ -41,13 +41,13 @@
                 only-title="{{ 'Show highlighted post only' | translate }}"
                 all-title="{{ 'Show all posts'| translate }}"
                 title="{{ timeline.highlightsOnly? 'Show all posts': 'Show highlighted post only' | translate }}">
-                <i class="fa fa-star fa-2"></i>  
+                <i class="icon-star icon--orange"></i> 
             </div>
             <button
                 ng-if="timeline.settings.canComment"
-                class="btn ng-cloak"
+                class="btn comment ng-cloak"
                 ng-class="{'active': timeline.comment}"
-                ng-click="timeline.comment = !timeline.comment" translate>Kommentieren</button>
+                ng-click="timeline.comment = !timeline.comment" translate><i class="icon-comment"></i>Kommentieren</button>
         </div>
         
     </div>
@@ -66,8 +66,8 @@
             infinite-scroll-immediate-check="false">
             <div class="lb-post load-new-posts"
                  ng-click="timeline.applyUpdates()"
-                 ng-show="timeline.settings.loadNewPostsManually && timeline.newPosts.length > 0"
-                 translate translate-n="timeline.newPosts.length"
+                 ng-show="timeline.settings.loadNewPostsManually && (timeline.newPosts.length > 0 || timeline.newStickyPosts.length > 0)"
+                 translate translate-n="timeline.newPosts.length + timeline.newStickyPosts.length"
                  translate-plural="See {{$count}} new updates" ng-cloak>
                 Ein neues Update
             </div>
@@ -88,10 +88,12 @@
                 </div>
                 <button class="pin-drawer-button" ng-class="{'chevron-active': timeline.stickyPagesManager.hideSticky}"
                 ng-click="timeline.stickyPagesManager.hideSticky = !timeline.stickyPagesManager.hideSticky">
-                    <i class="fa fa-chevron-up fa-chevron-fix"></i>
+                    <i class="icon-chevron-up"></i>
                 </button>
             </div>
-            <lb-posts timeline="timeline" posts="timeline.pagesManager.allPosts"></lb-posts>
+            <lb-posts
+                timeline="timeline"
+                posts="timeline.pagesManager.allPosts"></lb-posts>
         </section>
         <button ng-click="timeline.fetchNewPage()"
                 class="ng-cloak"
